@@ -7,6 +7,14 @@
 [怎么创建key的教程](https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys)
 [bootcss 前端框架下载网址](https://v3.bootcss.com/)
 [Github OAuth](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/)
+[MVN依赖目录](https://mvnrepository.com/)
+[okhttp使用网址](https://square.github.io/okhttp/)
+[Github用户官网](https://github.com/)
+[OAuth的使用](https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/)
+[OAuth的配置](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/)
+[h2数据库](http://www.h2database.com/html/quickstart.html)
+[在maven中配置mybatis的设置](http://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/)
+[Spring 官方文档](https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#boot-features-embedded-database-support)
 
 
 ## 工具

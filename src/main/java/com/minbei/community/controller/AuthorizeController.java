@@ -70,7 +70,7 @@ public class AuthorizeController {
             user.setName(githubuser.getName());
             user.setAccountId(String.valueOf(githubuser.getId()));
             user.setGmtCreate(System.currentTimeMillis());
-            user.setGmtModified(user.getGmtModified());
+            user.setGmtModified(user.getGmtCreate());
             userMapper.insert(user);
             // 获取当前用户
             request.getSession().setAttribute("user",githubuser);

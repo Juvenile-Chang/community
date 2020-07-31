@@ -3,6 +3,7 @@ package com.minbei.community.provider;
 import com.alibaba.fastjson.JSON;
 import com.minbei.community.dto.AccessTokenDTO;
 import com.minbei.community.dto.GithubUser;
+
 import okhttp3.*;
 import org.springframework.stereotype.Component;
 import java.io.IOException;
@@ -52,7 +53,7 @@ public class GithubProvider {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
                 // 指定的通过accessToken获取用户信息的网址
-                .url("http://api.github.com/user?access_token="+accessToken)
+                .url("https://api.github.com/user?access_token="+accessToken)
                 .build();
         try {
             // 获取response

@@ -44,9 +44,10 @@ public class AuthorizeController {
      *  HttpServletRequest：Spring会把上下文中的request放在类中供我们使用
      */
     @GetMapping("/callback")
-    public String callback(@RequestParam(name = "code") String code,
-                           @RequestParam(name = "state") String state,
-                           HttpServletResponse response){
+    public String callback(
+            @RequestParam(name = "code") String code,
+            @RequestParam(name = "state") String state,
+            HttpServletResponse response){
         // 创建一个AccessTokenDTO对象，用来存储信息
         AccessTokenDTO accessTokenDTO = new AccessTokenDTO();
         accessTokenDTO.setCode(code);
@@ -63,7 +64,7 @@ public class AuthorizeController {
          */
         String accessToken = githubProvider.getAccessToken(accessTokenDTO);
         GithubUser githubuser = githubProvider.getUser(accessToken);
-        if(githubuser!=null){
+        if(githubuser!=null && githubuser.getId()!=null){
 
             // 用来存储用户信息
             User user = new User();

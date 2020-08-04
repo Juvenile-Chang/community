@@ -16,6 +16,7 @@
 [在maven中配置mybatis的设置](http://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/)
 [Spring 官方文档](https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#boot-features-embedded-database-support)
 [flyway 数据库字段整合工具](https://flywaydb.org/)
+[lombok 自动进行添加get，set方法](https://projectlombok.org/)
 
 ## 工具
 [Git下载网站](https://git-scm.com/downloads)

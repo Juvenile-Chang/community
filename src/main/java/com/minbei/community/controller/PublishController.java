@@ -35,7 +35,7 @@ public class PublishController {
             HttpServletRequest request,
             Model model){
 
-        if (request.getCookies() ==null){
+        if (request.getCookies() ==null || request.getCookies().length ==0){
             model.addAttribute("error","用户未登录");
             return "publish";
         }else {

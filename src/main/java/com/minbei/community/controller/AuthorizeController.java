@@ -76,6 +76,7 @@ public class AuthorizeController {
             user.setAccountId(String.valueOf(githubuser.getId()));
             user.setGmtCreate(System.currentTimeMillis());
             user.setGmtModified(user.getGmtCreate());
+            user.setAvatarUrl(githubuser.getAvatar_url());
             // 通过userMapper把user对象写进数据库
             userMapper.insert(user);
 
